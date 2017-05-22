@@ -7,11 +7,14 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+import android.graphics.Typeface;
 
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = MainActivity.class.getSimpleName();
     private Button mFindRestaurantsButton;
     private EditText mLocationEditText;
+    private TextView mAppNameTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,5 +32,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+//       mAppNameTextView = (TextView) findViewById(R.id.appNameTextView);
+//        Typeface ostrichFont = Typeface.createFromAsset(getAssets(), "assets/fonts/ostrich-regular.ttf");
+//       mAppNameTextView.setTypeface(ostrichFont);
     }
 }
